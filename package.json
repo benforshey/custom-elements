@@ -16,18 +16,16 @@
   ],
   "scripts": {
     "build": "stencil build --docs",
+    "generate": "stencil generate",
+    "lint": "npx prettier --check src/**/*",
+    "prepare": "husky install",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
     "@js-temporal/polyfill": "^0.2.0",
-    "@stencil/core": "^2.0.1",
-    "@types/puppeteer": "^5.4.3",
-    "jest": "^26.6.3",
-    "jest-cli": "^26.6.3",
-    "puppeteer": "^5.5.0"
+    "@stencil/core": "^2.0.1"
   },
   "license": "MIT",
   "repository": {
@@ -40,6 +38,13 @@
   },
   "homepage": "https://github.com/benforshey/custom-elements#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.23"
+    "@types/jest": "^26.0.23",
+    "prettier": "^2.4.1",
+    "prettier-plugin-style-order": "^0.2.2",
+    "@types/puppeteer": "^5.4.3",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "puppeteer": "^5.5.0",
+    "husky": "^6.0.0"
   }
 }

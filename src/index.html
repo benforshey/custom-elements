@@ -36,8 +36,8 @@
         margin: 0;
       }
 
-      ul[role='list'],
-      ol[role='list'] {
+      ul[role="list"],
+      ol[role="list"] {
         list-style: none;
       }
 
@@ -46,13 +46,13 @@
       }
 
       body {
-        min-height: 100vh;
-        text-rendering: optimizeSpeed;
-        line-height: 1.5;
         display: grid;
-        align-items: center;
         grid-template-rows: 1fr;
+        align-items: center;
+        min-height: 100vh;
+        line-height: 1.5;
         background: var(--background);
+        text-rendering: optimizeSpeed;
       }
 
       a:not([class]) {
@@ -61,8 +61,8 @@
 
       img,
       picture {
-        max-width: 100%;
         display: block;
+        max-width: 100%;
       }
 
       input,
@@ -88,9 +88,9 @@
         *,
         *::before,
         *::after {
+          transition-duration: 0.01ms !important;
           animation-duration: 0.01ms !important;
           animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
           scroll-behavior: auto !important;
         }
       }

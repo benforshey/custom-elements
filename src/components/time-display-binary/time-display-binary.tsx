@@ -1,9 +1,9 @@
-import { Component, Host, h, Prop } from '@stencil/core';
-import { BinaryCodedDecimalDetail } from '../time-emitter/types';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { BinaryCodedDecimalDetail } from "../time-emitter/types";
 
 @Component({
-  tag: 'time-display-binary',
-  styleUrl: 'time-display-binary.css',
+  tag: "time-display-binary",
+  styleUrl: "time-display-binary.css",
   shadow: true,
 })
 export class TimeDisplayBinary {
@@ -13,12 +13,12 @@ export class TimeDisplayBinary {
   render() {
     return (
       <Host>
-        {this.timeValue?.map(binaryColumn => {
-          const iterator = binaryColumn.split('');
+        {this.timeValue?.map((binaryColumn) => {
+          const iterator = binaryColumn.split("");
 
           return (
             <span class="column">
-              {iterator.map(digit => {
+              {iterator.map((digit) => {
                 return (
                   <svg
                     aria-hidden="true"
@@ -33,9 +33,9 @@ export class TimeDisplayBinary {
                       r="50"
                       style={{
                         fill:
-                          digit === '1'
-                            ? 'var(--circle--on)'
-                            : 'var(--circle--off)',
+                          digit === "1"
+                            ? "var(--circle--on)"
+                            : "var(--circle--off)",
                       }}
                     />
                   </svg>

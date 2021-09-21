@@ -1,4 +1,4 @@
-export type EmitType = 'decimal' | 'binary-coded decimal';
+export type EmitType = "decimal" | "binary-coded decimal";
 
 export interface DecimalDetail {
   dayOfYear: string;

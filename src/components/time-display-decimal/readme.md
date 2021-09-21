@@ -1,9 +1,6 @@
 # time-display-decimal
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -12,7 +9,6 @@
 | `timeKey`   | `time-key`   |             | `"dayOfYear" \| "hours" \| "minutes" \| "seconds"` | `undefined` |
 | `timeValue` | `time-value` |             | `string`                                           | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

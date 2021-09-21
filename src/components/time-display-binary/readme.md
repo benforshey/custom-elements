@@ -1,9 +1,6 @@
 # time-display-binary
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -12,7 +9,6 @@
 | `timeKey`   | `time-key` |             | `"dayOfYear" \| "hours" \| "minutes" \| "seconds"` | `undefined` |
 | `timeValue` | --         |             | `string[]`                                         | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

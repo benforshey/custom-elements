@@ -1,9 +1,9 @@
-import { Component, Element, Host, h, Listen, State } from '@stencil/core';
-import { TimeEmitterDetail } from '../time-emitter/types';
+import { Component, Element, Host, h, Listen, State } from "@stencil/core";
+import { TimeEmitterDetail } from "../time-emitter/types";
 
 @Component({
-  tag: 'time-display',
-  styleUrl: 'time-display.css',
+  tag: "time-display",
+  styleUrl: "time-display.css",
   shadow: true,
 })
 export class TimeDisplay {
@@ -13,10 +13,10 @@ export class TimeDisplay {
 
   @State() timeString: string;
 
-  @Listen('timeEmitterUpdate', {
+  @Listen("timeEmitterUpdate", {
     capture: true,
     passive: true,
-    target: 'document',
+    target: "document",
   })
   handleTimeChange({
     detail: { decimal, binaryCodedDecimal },
@@ -28,16 +28,16 @@ export class TimeDisplay {
     this.#children.map(
       (child: HTMLTimeDisplayBinaryElement | HTMLTimeDisplayDecimalElement) => {
         switch (child.nodeName) {
-          case 'TIME-DISPLAY-BINARY':
-            child['timeValue'] = binaryCodedDecimal[child['timeKey']];
+          case "TIME-DISPLAY-BINARY":
+            child["timeValue"] = binaryCodedDecimal[child["timeKey"]];
             break;
 
-          case 'TIME-DISPLAY-DECIMAL':
+          case "TIME-DISPLAY-DECIMAL":
           default:
-            child['timeValue'] = decimal[child['timeKey']];
+            child["timeValue"] = decimal[child["timeKey"]];
             break;
         }
-      },
+      }
     );
   }
 

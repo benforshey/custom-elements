@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+circle {
+  transition: fill 200ms ease-out;
+}
